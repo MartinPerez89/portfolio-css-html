@@ -5,7 +5,10 @@
 	--primary: #050335;
 	--secondary: #3C84AB;
 	--third: #85CDFD;
-	--fourth: #DEFCF9;
+	--fourth: #f0f3f3;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -41,13 +44,13 @@ h1::first-letter{
 }
 
 footer{
-    height: 12vh;
+    height: 10vh;
     margin-top: auto;
     background-color: var(--third);
     justify-content: center;
     align-items: center;
+    
 }
-
 
 
 
@@ -94,10 +97,18 @@ footer{
     border-radius: 1.25rem;
     margin: .625rem;
     background-color: var(--third);
+    transition: all 0.5s;
 }
 
 .card:hover{
-    border: 5px solid var(--fourth);
+    border: 5px solid var(--primary);
+
+}
+
+.card-image{
+    height: 15rem;
+    width: 10rem;
+    border-radius: 1.25rem;
 }
 
 .logo{
@@ -138,14 +149,18 @@ footer{
     border: 2px solid var(--secondary);
 }
 
-.navbar-desktop{
-        display: none;
-    }
-
 .navbar-mobile{
-    display:block;
+    display: block;
+    flex-direction: column;
     padding: 1rem;
 }
+
+.color-form{
+    color: var(--fourth);
+    background-color: var(--secondary);
+}
+
+
 
 .footer{
     padding: 0.5rem;
@@ -157,7 +172,6 @@ footer{
     .grid-list-container{
         grid-template-columns: auto auto;
     }
-    
 }
 
 @media (min-width: 768px) {
@@ -166,9 +180,6 @@ footer{
     }
     .navbar-desktop{
         display: block;
-    }
-    .navbar-mobile{
-    display:none;
     }
     .footer{
         padding: 1rem;
@@ -196,49 +207,3 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-/* .wrapper {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--primary);
-    color: var(--fourth);
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-}
-
-.brand span{
-    color: var(--secondary)
-}
-
-.menu {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-}
-.menu a {
-    color: var(--fourth);
-    text-decoration: none;
-}
-
-.menu a:hover{
-    background-color: var(--third)
-}
-
-.main {
-    margin: 0 auto;
-    width: auto;
-    height: auto;
-    
-} */
